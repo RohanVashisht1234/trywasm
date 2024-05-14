@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trunk Template</title>
+    <link rel="stylesheet" href="/index-597d90855083f957.css" integrity="sha384&#x2D;7GZOiJ7WwbJ2PKz3iZ2Vt&#x2F;NHNz65guUjQZ&#x2F;uo6o2LYkbO&#x2F;Al8pImelhUBJCReJw&#x2B;"/>
+  
+<link rel="modulepreload" href="/trunk-template-9fa949999c7f3674.js" crossorigin=anonymous integrity="sha384-CLsriLqk1cOQI6M01UWc+zXVcVgA6jHRZi7ODCk91dQZEfu47L9nOlhAIYhDuIcY">
+<link rel="preload" href="/trunk-template-9fa949999c7f3674_bg.wasm" crossorigin=anonymous integrity="sha384-Dyk6kMkh0tI4ln7R3nWGta/3u6OrP2Bk623f9LSjFpB8WHEmbkx6n0N8HEFZugs6" as="fetch" type="application/wasm"></head>
+  <body>
+    
+  
+<script type="module">
+import init, * as bindings from '/trunk-template-9fa949999c7f3674.js';
+const wasm = await init('/trunk-template-9fa949999c7f3674_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
